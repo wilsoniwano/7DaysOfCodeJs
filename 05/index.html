@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/014e89c22e.js" crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet">
+  <title>Lista de Compras - #7DaysOfCode</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Lista de compras</h1>
+    <form id="add-product-form">
+      <fieldset>
+        <legend class="visually-hidden">Adicione um produto na lista</legend>
+        <label for="name">
+          <span>Nome do produto</span>
+          <input type="text" id="name" required pattern="">
+        </label>
+        <label for="category">
+          <span>Categoria</span>
+          <select id="category">
+            <option value="🥤 Bebidas">Bebidas</option>
+            <option value="🥩 Carnes">Carnes</option>
+            <option value="🧀 Frios e Laticínios">Frios e Laticínios</option>
+            <option value="🧻 Higiene">Higiene</option>
+            <option value="🍎 Hortifruti">Hortifruti</option>
+            <option value="🫧 Limpeza">Limpeza</option>
+            <option value="🍞 Mercearia">Mercearia</option>
+            <option value="🧇 Matinais">Matinais</option>
+            <option value="🥯 Padaria">Padaria</option>
+            <option value="🐶 Pet Shop">Pet Shop</option>
+            <option value="🔪 Utilidades Domésticas">Utilidades Domésticas</option>
+          </select>
+        </label>
+        <button class="button" type="submit" onclick="addProduct(event)">Adicionar</button>
+      </fieldset>
+    </form>
+    <section id="shopping-list">
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
